@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="index.css"/> -->
+  <title>Document</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  background-image: url("e95a19da-402a-4ffe-844a-c59351897bc1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+}
+.top {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ec75ae;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.6s;
+}
+.navbar ul li:hover::after {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.content h1 {
+  margin-top: 80px;
+  font-size: 70px;
+}
+.content p {
+  margin-top: 20px auto;
+  line-height: 25px;
+}
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  border: 2px solid #f386bb;
+  background: transparent;
+  color: red;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #e84393;
+  width: 0;
+  height: 100%;
+  border-radius: 25px;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+}
+.footer {
+  padding: 20px 9%;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.footer .box-container .box {
+  flex: 1 1 250px;
+}
+.footer .box-container .box h3 {
+  color: white;
+  font-size: 25px;
+  padding: 10px 0;
+}
+.footer .box-container .box a {
+  display: block;
+  color: white;
+  font-size: 15px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.footer .box-container .box a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.footer .credit {
+  text-align: center;
+  padding-left: 30%;
+  margin-top: 15px;
+  padding-top: 25px;
+  font-size: 20px;
+  color:white;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+</style>
+<body>
+  <div class="top">
+      <div class="navbar">
+          <a href="" class="logo">WELCOME TO BVC GROUP</a>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+          </ul>
+      </div>
+      <div class="content">
+          <h1>Department of AIML</h1>
+          <p>Artificial Intelligence and Machine Learning Engineering <br> option</p>
+          <div>
+    <a href="https://bvcec.edu.in/departments/cse-artificial-intelligence-machine-learning/#:~:text=The%20CSE-AIML%20branch%20was%20introduced%20at%20BONAM%20VENKATA,representation%2C%20reasoning%2C%20and%20learning%20methods%20in%20Artificial%20Intelligence.">
+        <button><span></span> More</button>
+    </a>
+</div>
+
+      </div>
+  </div>
+  <section class="footer">
+      <div class="box-container">
+          <div class="box">
+              <h3>quick links</h3>
+              <a href="#">Home</a>
+              <a href="#">about</a>
+              <a href="#">New</a>
+          </div>
+          <div class="box">
+              <h3>Locations</h3>
+              <a href="#">Odalarevu</a>
+              <a href="#">Amalapuram</a>
+              <a href="#">Rajahmandry</a>
+          </div>
+          <div class="box">
+              <h3>contact info</h3>
+              <a href="#">+91 9849642742, 8856250825</a>
+              <a href="#">bvce@bvcgroup.in</a>
+              <a href="#">Amalapuram-Andrapradesh</a>
+          </div>
+          <div class="credit">created by Machine Learing (Batch-8) </div>
+      </div>
+</section>
+<big><div class="row">
+  <center><a href="file:///C:/Users/sekha/OneDrive/Desktop/MACHIN-LEARINING/srinivas.html" class="button">
+      Next
+  </a></center>
+</div></big>
+</body>
+</html>
